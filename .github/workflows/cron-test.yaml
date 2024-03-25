@@ -1,0 +1,8 @@
+name: Deploy Website
+on: [push]
+jobs:
+  build-and-deploy-website:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Simple echo statement
+          run: echo "Current time is $(date)"
