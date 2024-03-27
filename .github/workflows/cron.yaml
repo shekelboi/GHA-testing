@@ -4,7 +4,7 @@ on:
   # schedule:
   #   - cron: '*/15 * * * *'
 jobs:
-  cron-test:
+  app-test:
     uses: shekelboi/GHA-testing/.github/workflows/app.yaml@main
     with:
       APP: "test"
