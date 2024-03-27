@@ -1,12 +1,15 @@
-name: Cron test
+name: Some workflow
 on:
   workflow_dispatch:
-
+    inputs:
+      APP:
+        description: The name of the app
 env:
-  S3: "S3 value"
+  APP: ${{ inputs.APP }}
+
 jobs:
   cron-test:
     runs-on: ubuntu-latest
     steps:
-        - name: Simple echo statement
-          run: echo "$S3"
+        - name: Print the name of the app
+          run: echo "$APP"
