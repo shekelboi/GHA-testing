@@ -1,5 +1,6 @@
 name: Some workflow
 on:
+  workflow_call:
   workflow_dispatch:
     inputs:
       APP:
