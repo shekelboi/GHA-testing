@@ -1,10 +1,12 @@
 name: Cron test
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+env:
+  S3: "S3 value"
 jobs:
   cron-test:
     runs-on: ubuntu-latest
     steps:
         - name: Simple echo statement
-          run: echo "Current time is $(date)"
+          run: echo "$S3"
