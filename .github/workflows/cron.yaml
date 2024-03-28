@@ -1,7 +1,7 @@
 name: Cron job invoking a workflow
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '43 14 * * *'
 jobs:
   app-test:
     uses: shekelboi/GHA-testing/.github/workflows/app.yaml@main
