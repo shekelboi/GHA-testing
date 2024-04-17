@@ -1,6 +1,0 @@
-name: Cron test
-on:
-  workflow_dispatch:
-jobs:
-  example:
-    runs-on: ubuntu-latest
