@@ -1,0 +1,13 @@
+name: Testing action
+on:
+  workflow_dispatch:
+
+jobs:
+  cron-test:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v4
+        - id: foo
+          uses: shekelboi/TestAction@main
+          with:
+            slack_hook: I'm set
