@@ -18,4 +18,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: Print the name of the app
+          shell: bash
           run: echo "$APP"
