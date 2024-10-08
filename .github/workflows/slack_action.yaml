@@ -6,8 +6,7 @@ jobs:
   cron-test:
     runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v4
-        - id: foo
+        - name: test
           uses: shekelboi/TestAction@main
           with:
             slack_hook: I'm set
